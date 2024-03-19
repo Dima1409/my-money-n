@@ -1,14 +1,7 @@
-import { StatusBar } from "expo-status-bar";
+// import { StatusBar } from "expo-status-bar";
 import LoginForm from "./src/LoginForm";
-import {
-  ScrollView,
-  Image,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-  ImageBackground,
-} from "react-native";
+// import RegisterForm from "./src/RegisterForm";
+import { StyleSheet, View, ImageBackground } from "react-native";
 
 const App = () => {
   return (
@@ -18,6 +11,7 @@ const App = () => {
         style={styles.image}
       >
         <LoginForm />
+        {/* <RegisterForm /> */}
       </ImageBackground>
     </View>
   );

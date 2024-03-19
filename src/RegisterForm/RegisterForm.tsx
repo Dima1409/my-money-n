@@ -13,11 +13,12 @@ import {
 } from "react-native";
 
 const initialState = {
+  name: "",
   email: "",
   password: "",
 };
 
-const LoginForm: React.FC = () => {
+const RegisterForm: React.FC = () => {
   const [formData, setFormData] = useState(initialState);
   const [focusInput, setFocusInput] = useState<boolean>(false);
 
@@ -35,7 +36,9 @@ const LoginForm: React.FC = () => {
 
   const onSubmit = (): void => {
     hideKeyboard();
-    alert(`email: ${formData.email}, пароль: ${formData.password}`);
+    alert(
+      `ім'я: ${formData.name}, email: ${formData.email}, пароль: ${formData.password}`
+    );
     setFormData(initialState);
   };
 
@@ -48,8 +51,22 @@ const LoginForm: React.FC = () => {
         <View style={{ ...styles.form, marginBottom: focusInput ? 10 : 150 }}>
           <View style={styles.header}>
             <Text style={styles.headerTitle}>
-              Увійти в існуючий обліковий запис
+              Створити новий обліковий запис
             </Text>
+          </View>
+          <View style={styles.input}>
+            <TextInput
+              onFocus={() => setFocusInput(true)}
+              onBlur={() => setFocusInput(false)}
+              style={{
+                color: theme.colors.white,
+                fontSize: theme.fontSizes.bold,
+              }}
+              placeholder="Ім'я"
+              placeholderTextColor={theme.colors.white}
+              value={formData.name}
+              onChangeText={(value) => handleInputChange("name", value)}
+            />
           </View>
           <View style={styles.input}>
             <TextInput
@@ -98,7 +115,7 @@ const LoginForm: React.FC = () => {
                   fontSize: theme.fontSizes.normal,
                 }}
               >
-                Увійти
+                Створити
               </Text>
             </TouchableOpacity>
           </View>
@@ -148,4 +165,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default LoginForm;
+export default RegisterForm;
