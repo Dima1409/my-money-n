@@ -94,6 +94,7 @@ const LoginForm: React.FC = () => {
             >
               <Text
                 style={{
+                  fontFamily: theme.fontFamily.mO,
                   color: theme.colors.white,
                   fontSize: theme.fontSizes.normal,
                 }}
@@ -117,9 +118,9 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   headerTitle: {
+    fontFamily: theme.fontFamily.hB,
     textAlign: "center",
     fontSize: theme.fontSizes.extraBold,
-    fontWeight: "700",
     color: theme.colors.white,
   },
   form: {

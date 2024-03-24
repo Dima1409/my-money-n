@@ -11,6 +11,12 @@ const theme = {
     bold: 24,
     extraBold: 28,
   },
+  fontFamily: {
+    hL: "Hind-Light",
+    hR: "Hind-Regular",
+    hB: "Hind-Bold",
+    mO: "MidimiOne-Regular",
+  },
 };
 
 export default theme;
