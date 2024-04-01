@@ -1,2 +1,7 @@
 # Custom Dictionary Words
 Register
+запис
+існуючий
+обліковий
+Реєстрація
+Увійти

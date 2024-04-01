@@ -112,21 +112,6 @@ const LoginForm: React.FC = () => {
               </TouchableOpacity>
             </View>
           </View>
-          <TouchableOpacity
-            style={[styles.buttonTab]}
-            onPress={() => navigation.navigate("Register")}
-          >
-            <Text
-              style={{
-                fontFamily: theme.fontFamily.mO,
-                color: theme.colors.white,
-                fontSize: theme.fontSizes.normal,
-                textAlign: "center",
-              }}
-            >
-              Реєстрація
-            </Text>
-          </TouchableOpacity>
         </ImageBackground>
       </TouchableWithoutFeedback>
     </KeyboardAvoidingView>
@@ -168,12 +153,6 @@ const styles = StyleSheet.create({
   },
   button: {
     borderRadius: 6,
-    padding: 12,
-    paddingLeft: 40,
-    paddingRight: 40,
-    backgroundColor: theme.colors.green,
-  },
-  buttonTab: {
     padding: 12,
     paddingLeft: 40,
     paddingRight: 40,
