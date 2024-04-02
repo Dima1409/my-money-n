@@ -4,6 +4,7 @@ const theme = {
     white: "#fff",
     tomato: "#FF6347",
     green: "#409966",
+    black: "000000",
   },
   fontSizes: {
     small: 16,
