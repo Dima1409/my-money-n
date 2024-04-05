@@ -3,7 +3,7 @@ import { Entypo } from "@expo/vector-icons";
 import React from "react";
 import theme from "../theme/theme";
 
-type IconName = "home" | "login" | "add-user" | "list";
+type IconName = "home" | "login" | "log-out" | "edit" | "add-user" | "list";
 
 interface IconTabsProps {
   title: IconName;

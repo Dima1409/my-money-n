@@ -12,7 +12,6 @@ import {
   Keyboard,
   ImageBackground,
 } from "react-native";
-import { useNavigation} from "@react-navigation/native";
 
 const initialState = {
   name: "",
@@ -23,8 +22,6 @@ const initialState = {
 const RegisterForm: React.FC = () => {
   const [formData, setFormData] = useState(initialState);
   const [focusInput, setFocusInput] = useState<boolean>(false);
-
-  const navigation = useNavigation();
 
   const handleInputChange = (name: string, value: string) => {
     setFormData((prevData) => ({

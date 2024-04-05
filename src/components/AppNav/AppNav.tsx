@@ -11,10 +11,9 @@ import theme from "../../theme/theme";
 import IconTabs from "../../helpers/iconRender";
 
 const MainStack = createBottomTabNavigator();
-type IconName = "home" | "login" | "add-user" | "list";
+type IconName = "home" | "login" | "log-out" | "edit" | "add-user" | "list";
 
 const AppNav: React.FC = () => {
-
   const renderTabIcon =
     (iconName: IconName, text: string) =>
     ({ focused }: { focused: boolean }) => (
